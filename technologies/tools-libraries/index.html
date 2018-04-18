@@ -5,13 +5,16 @@
 	<meta name="viewport" content="width=device-width initial-scale=1" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>Magento PWA Documentation</title>
+	<title>Tools and libraries | Magento PWA Documentation</title>
 	<meta name="description" content="">
 
 	<link rel="stylesheet" href="/pwa-devdocs/assets/css/app.css" />
 	<link rel="stylesheet" href="/pwa-devdocs/assets/css/print.css" media="print"/>
 
 	<link rel="stylesheet" href="/pwa-devdocs/builds/css/main.css" />
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 	<!-- Hotjar Tracking Code for https://magento-research.github.io/pwa-devdocs/ -->
 <script>
     (function(h,o,t,j,a,r){
@@ -75,28 +78,6 @@
             
                 
                 <li><a href="/pwa-devdocs/technologies/peregrine/">peregrine</a></li>
-            
-            </ul>
-
-        </div>
-
-    </li>
-
-    <li class="nav-main-item" tabindex="0" role="menuitem" aria-haspopup="true">
-        <span href="#" data-proofer-ignore tabindex="-1">Reference and Guides</span>
-
-        <div class="nav-popup" role="menu" aria-hidden="true">
-
-            <ul>
-            
-                
-                <li><a href="/pwa-devdocs/reference/ui-components/">UI Components Reference</a></li>
-            
-                
-                <li><a href="/pwa-devdocs/guides/testing">Testing Guide</a></li>
-            
-                
-                <li><a href="/pwa-devdocs/tutorials/">Tutorials</a></li>
             
             </ul>
 
@@ -183,81 +164,11 @@
     
 
     
-    <ul>
-    
-        <li >
-            
-            <a href="/pwa-devdocs/technologies/basic-concepts/app-shell/" class="stub">Application shell</a>
-            
-        </li>
-    
-        <li >
-            
-            <a href="/pwa-devdocs/technologies/basic-concepts/service-worker/" class="stub">Service worker</a>
-            
-        </li>
-    
-        <li >
-            
-            <a href="/pwa-devdocs/technologies/basic-concepts/component-data-binding/" class="stub">Component data binding</a>
-            
-        </li>
-    
-        <li >
-            
-            <a href="/pwa-devdocs/technologies/basic-concepts/graphql" class="stub">GraphQL</a>
-            
-        </li>
-    
-        <li >
-            
-            <a href="/pwa-devdocs/technologies/basic-concepts/css-modules/" class="stub">CSS modules</a>
-            
-        </li>
-    
-        <li >
-            
-            <a href="/pwa-devdocs/technologies/basic-concepts/client-state-reducers-actions/" class="stub">Client state, reducers, and actions</a>
-            
-        </li>
-    
-        <li >
-            
-            <a href="/pwa-devdocs/technologies/basic-concepts/loading-offline-states/" class="stub">Loading and offline states</a>
-            
-        </li>
-    
-        <li >
-            
-            <a href="/pwa-devdocs/technologies/basic-concepts/container-extensibility/" class="stub">Container extensibility</a>
-            
-        </li>
-    
-        <li >
-            
-            <a href="/pwa-devdocs/technologies/basic-concepts/performance-patterns/" class="stub">Performance patterns</a>
-            
-        </li>
-    
-        <li >
-            
-            <a href="/pwa-devdocs/technologies/basic-concepts/root-components-routing/" class="stub">Root components and routing</a>
-            
-        </li>
-    
-        <li >
-            
-            <a href="/pwa-devdocs/technologies/basic-concepts/critical-path/" class="stub">Critical path</a>
-            
-        </li>
-    
-    </ul>
-    
 </li>
     
     <li >
     
-    <a href="/pwa-devdocs/technologies/pwa-buildpack/" class="stub">pwa-buildpack</a>
+    <a href="/pwa-devdocs/technologies/pwa-buildpack/" >pwa-buildpack</a>
     
 
     
@@ -265,7 +176,7 @@
     
     <li >
     
-    <a href="/pwa-devdocs/technologies/peregrine/" class="stub">peregrine</a>
+    <a href="/pwa-devdocs/technologies/peregrine/" >peregrine</a>
     
 
     
@@ -283,15 +194,64 @@
 		<div class="content-wrap">
 			<!-- page-header -->
 <section class="page-intro">
-	<h1 class="page-heading"></h1>
+	<h1 class="page-heading">Tools and libraries</h1>
 </section>
-			<h2 id="sorry">Sorry!</h2>
+			<p>To work with the utilities provided by the Magento PWA project, you should be familiar with the tools and libraries described on this page.</p>
 
-<p>The content for this page does not exist yet!</p>
+<h2 id="webpack">webpack</h2>
 
-<p>If you would like to contribute content for this page, please visit our <a href="https://github.com/magento-research/pwa-devdocs/blob/master/.github/CONTRIBUTING.md">Contribution Guide</a>.</p>
+<p><a href="https://webpack.js.org/">webpack</a> is a configuration-driven asset bundler and optimizer for JavaScript applications.</p>
 
-<p><a href="/pwa-devdocs/">Return to main page</a></p>
+<p>webpack’s primary function is to create one or more bundles from the dependencies in your project’s modules.
+webpack is also able to transform, package, or optimize resources and assets using plugins.
+This allows you to extend webpack’s functionality beyond JavaScript bundling.</p>
+
+<p>The <a href="/pwa-devdocs/technologies/pwa-buildpack/">pwa-buildpack</a> tool uses webpack to set up your development environment.
+It uses your local environment variables and the configuration in the <code class="highlighter-rouge">webpack.config.js</code> file to generate a development environment for your system.</p>
+
+<h2 id="react">React</h2>
+
+<p><a href="https://reactjs.org/">React</a> officially describes itself as a <em>JavaScript library for building user interfaces</em>. 
+The library provides the following features that make PWA development easier:</p>
+
+<ul>
+  <li>
+    <p><strong>Simple</strong> - The React library does one thing: build a user interface.
+It does this without making assumptions about the underlying technology stack.
+This flexibility gives you the freedom to choose the appropriate solutions for the rest of your project.</p>
+  </li>
+  <li>
+    <p><strong>Declarative</strong> - Creating a complex user interface is difficult when working directly with the DOM API.
+React allows you to describe how your interface should look for a specific application state, and
+the library takes care of rendering the UI correctly when the state changes.</p>
+  </li>
+  <li>
+    <p><strong>Modular</strong> - React encourages developers to create modular and reusable UI components.
+ Taking a modular approach to development makes your code easier to debug and maintain.</p>
+  </li>
+</ul>
+
+<h2 id="redux">Redux</h2>
+
+<p><a href="https://redux.js.org/">Redux</a> is a JavaScript library used for managing state in a web application.</p>
+
+<p>It provides a global store object that holds application state that multiple components depend on.
+Components that plug into the store have direct access to the specific state data they need.</p>
+
+<p>This library is often paired with React to alleviate the problem of passing data down multiple component layers.</p>
+
+<h2 id="graphql">GraphQL</h2>
+
+<p><a href="https://graphql.org/">GraphQL</a> is a specification for a data query language on the client side and a service layer on the server side.
+It is often seen as an alternative to using <a href="https://en.wikipedia.org/wiki/REST">REST</a> endpoints.</p>
+
+<p>One of the main advantages GraphQL has over REST is that a single GraphQL endpoint can accomodate requests for any combination of X, Y, and Z pieces of data,
+whereas REST requires specialized endpoints for different data request combinations. 
+Unlike REST, which can require multiple server requests to aggregate data, 
+a single GraphQL request returns only the data needed and nothing more.</p>
+
+<p>Performance is an important metric for PWA applications.
+Using GraphQL improves this by reducing the number of server calls and the amount of data returned.</p>
 
 
 		</div>

@@ -12,6 +12,9 @@
 	<link rel="stylesheet" href="/pwa-devdocs/assets/css/print.css" media="print"/>
 
 	<link rel="stylesheet" href="/pwa-devdocs/builds/css/main.css" />
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 	<!-- Hotjar Tracking Code for https://magento-research.github.io/pwa-devdocs/ -->
 <script>
     (function(h,o,t,j,a,r){
@@ -75,28 +78,6 @@
             
                 
                 <li><a href="/pwa-devdocs/technologies/peregrine/">peregrine</a></li>
-            
-            </ul>
-
-        </div>
-
-    </li>
-
-    <li class="nav-main-item" tabindex="0" role="menuitem" aria-haspopup="true">
-        <span href="#" data-proofer-ignore tabindex="-1">Reference and Guides</span>
-
-        <div class="nav-popup" role="menu" aria-hidden="true">
-
-            <ul>
-            
-                
-                <li><a href="/pwa-devdocs/reference/ui-components/">UI Components Reference</a></li>
-            
-                
-                <li><a href="/pwa-devdocs/guides/testing">Testing Guide</a></li>
-            
-                
-                <li><a href="/pwa-devdocs/tutorials/">Tutorials</a></li>
             
             </ul>
 
@@ -183,81 +164,11 @@
     
 
     
-    <ul>
-    
-        <li >
-            
-            <a href="/pwa-devdocs/technologies/basic-concepts/app-shell/" class="stub">Application shell</a>
-            
-        </li>
-    
-        <li >
-            
-            <a href="/pwa-devdocs/technologies/basic-concepts/service-worker/" class="stub">Service worker</a>
-            
-        </li>
-    
-        <li >
-            
-            <a href="/pwa-devdocs/technologies/basic-concepts/component-data-binding/" class="stub">Component data binding</a>
-            
-        </li>
-    
-        <li >
-            
-            <a href="/pwa-devdocs/technologies/basic-concepts/graphql" class="stub">GraphQL</a>
-            
-        </li>
-    
-        <li >
-            
-            <a href="/pwa-devdocs/technologies/basic-concepts/css-modules/" class="stub">CSS modules</a>
-            
-        </li>
-    
-        <li >
-            
-            <a href="/pwa-devdocs/technologies/basic-concepts/client-state-reducers-actions/" class="stub">Client state, reducers, and actions</a>
-            
-        </li>
-    
-        <li >
-            
-            <a href="/pwa-devdocs/technologies/basic-concepts/loading-offline-states/" class="stub">Loading and offline states</a>
-            
-        </li>
-    
-        <li >
-            
-            <a href="/pwa-devdocs/technologies/basic-concepts/container-extensibility/" class="stub">Container extensibility</a>
-            
-        </li>
-    
-        <li >
-            
-            <a href="/pwa-devdocs/technologies/basic-concepts/performance-patterns/" class="stub">Performance patterns</a>
-            
-        </li>
-    
-        <li >
-            
-            <a href="/pwa-devdocs/technologies/basic-concepts/root-components-routing/" class="stub">Root components and routing</a>
-            
-        </li>
-    
-        <li >
-            
-            <a href="/pwa-devdocs/technologies/basic-concepts/critical-path/" class="stub">Critical path</a>
-            
-        </li>
-    
-    </ul>
-    
 </li>
     
     <li >
     
-    <a href="/pwa-devdocs/technologies/pwa-buildpack/" class="stub">pwa-buildpack</a>
+    <a href="/pwa-devdocs/technologies/pwa-buildpack/" >pwa-buildpack</a>
     
 
     
@@ -265,7 +176,7 @@
     
     <li >
     
-    <a href="/pwa-devdocs/technologies/peregrine/" class="stub">peregrine</a>
+    <a href="/pwa-devdocs/technologies/peregrine/" >peregrine</a>
     
 
     
@@ -285,22 +196,70 @@
 <section class="page-intro">
 	<h1 class="page-heading">Basic Concepts</h1>
 </section>
-			<p>The tools provided by the Magento PWA project allows you to create websites that are fast, mobile-friendly, and reliable.</p>
+			<p>The tools provided by the Magento PWA project allows you to create websites that are fast, mobile-friendly, and reliable. 
+This topic lists the basic concepts you need to know to work with the Magento PWA Studio tools.</p>
 
-<p>The following guides describe basic concepts you need to know to work with Magento PWA Studio tools.</p>
+<h2 id="application-shell">Application shell</h2>
 
-<ul>
-  <li><a href="/pwa-devdocs/technologies/basic-concepts/app-shell/">Application shell</a></li>
-  <li><a href="/pwa-devdocs/technologies/basic-concepts/component-data-binding/">Component data binding</a></li>
-  <li><a href="/pwa-devdocs/technologies/basic-concepts/graphql/">GraphQL</a></li>
-  <li><a href="/pwa-devdocs/technologies/basic-concepts/css-modules/">CSS modules</a></li>
-  <li><a href="/pwa-devdocs/technologies/basic-concepts/client-state-reducers-actions/">Client state, reducers, and actions</a></li>
-  <li><a href="/pwa-devdocs/technologies/basic-concepts/loading-offline-states/">Loading and offline states</a></li>
-  <li><a href="/pwa-devdocs/technologies/basic-concepts/container-extensibility/">Container extensibility</a></li>
-  <li><a href="/pwa-devdocs/technologies/basic-concepts/performance-patterns/">Performance patterns</a></li>
-  <li><a href="/pwa-devdocs/technologies/basic-concepts/root-components-routing/">Root components and routing</a></li>
-  <li><a href="/pwa-devdocs/technologies/basic-concepts/critical-path/">Critical path</a></li>
-</ul>
+<p>An application shell provides the basic user interface structure for a progressive web application.  <br />
+<sub>[ <em><a href="https://github.com/magento-research/pwa-devdocs/issues/8">Help write this topic</a></em> ]</sub></p>
+
+<h2 id="service-worker">Service worker</h2>
+
+<p>A service worker is a script that runs in the background.
+Progressive web applications use service workers for caching and resource retrieval.  <br />
+<sub>[ <em><a href="https://github.com/magento-research/pwa-devdocs/issues/14">Help write this topic</a></em> ]</sub></p>
+
+<h2 id="component-data-binding">Component data binding</h2>
+
+<p>Component data binding refers to the way data flows between the source and a UI component.
+Progressive web applications use data binding patterns to connect dynamic data with the user interface. <br />
+<sub>[ <em><a href="https://github.com/magento-research/pwa-devdocs/issues/9">Help write this topic</a></em> ]</sub></p>
+
+<h2 id="graphql">GraphQL</h2>
+
+<p>GraphQL is a specification for a data query language client side and a service layer on the server side.
+It is used to request and push data in a progressive web application. <br />
+<sub>[ <em><a href="https://github.com/magento-research/pwa-devdocs/issues/10">Help write this topic</a></em> ]</sub></p>
+
+<h2 id="css-modules">CSS modules</h2>
+
+<p>CSS modules are modular and reusable CSS styles.
+This allows you to develop components with styles that do not conflict with external style definitions. <br />
+<sub>[ <em><a href="https://github.com/magento-research/pwa-devdocs/issues/11">Help write this topic</a></em> ]</sub></p>
+
+<h2 id="client-state-reducers-and-actions">Client state, reducers, and actions</h2>
+
+<p>Client state, reducers, and actions are <a href="https://redux.js.org/introduction/core-concepts">Redux</a> concepts used to manage and handle the state of a web application.<br />
+<sub>[ <em><a href="https://github.com/magento-research/pwa-devdocs/issues/12">Help write this topic</a></em> ]</sub></p>
+
+<h2 id="loading-and-offline-states">Loading and offline states</h2>
+
+<p>Loading and offline are both states that must be handled by progressive web applications. <br />
+<sub>[ <em><a href="https://github.com/magento-research/pwa-devdocs/issues/13">Help write this topic</a></em> ]</sub></p>
+
+<h2 id="container-extensibility">Container extensibility</h2>
+
+<p>Writing extensible containers allow others to re-use and alter your container without modifying the source. <br />
+<sub>[ <em><a href="https://github.com/magento-research/pwa-devdocs/issues/15">Help write this topic</a></em> ]</sub></p>
+
+<h2 id="performance-patterns">Performance patterns</h2>
+
+<p>Performance is an important feature for a progressive web app.
+There are many strategies and patterns available to help boost the performance of a PWA. <br />
+<sub>[ <em><a href="https://github.com/magento-research/pwa-devdocs/issues/16">Help write this topic</a></em> ]</sub></p>
+
+<h2 id="root-components-and-routing">Root components and routing</h2>
+
+<p>The root component of an application is the DOM node under which all other nodes are managed by React.
+Routing is the ability to map a URL pattern to the appropriate handler. <br />
+<sub>[ <em><a href="https://github.com/magento-research/pwa-devdocs/issues/16">Help write this topic</a></em> ]</sub></p>
+
+<h2 id="critical-path">Critical path</h2>
+
+<p>The critical path for rendering refers to the steps the browser takes to process the HTML, CSS, and JavaScript files to display a website.
+Optimizing the critical path is important to get the best performance out of a progressive web application. <br />
+<sub>[ <em><a href="https://github.com/magento-research/pwa-devdocs/issues/18">Help write this topic</a></em> ]</sub></p>
 
 
 		</div>
