@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width initial-scale=1" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>Basic Concepts | Magento PWA Documentation</title>
+	<title>Venia Theme (Concept) | Magento PWA Documentation</title>
 	<meta name="description" content="">
 
 	<link rel="stylesheet" href="/pwa-devdocs/assets/css/app.css" />
@@ -35,7 +35,7 @@
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 
-	<link rel="canonical" href="/pwa-devdocs/technologies/basic-concepts/">
+	<link rel="canonical" href="/pwa-devdocs/venia-pwa-concept/">
 
 	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://magento.com/favicon.ico">
 	<link rel="apple-touch-icon" type="image/png" href="https://magento.com/apple-touch-icon.png">
@@ -169,7 +169,7 @@
         
     </li>
 
-    <li class="active">
+    <li >
         
         <a href="/pwa-devdocs/technologies/basic-concepts/" >Basic concepts</a>
         
@@ -265,7 +265,7 @@
 
 <ul class="table-of-contents">
 
-    <li >
+    <li class="active">
         
         <a href="/pwa-devdocs/venia-pwa-concept/" >Overview</a>
         
@@ -286,10 +286,10 @@
 			<!-- page-header -->
 <section class="page-intro">
 
-	<h1 class="page-heading">Basic Concepts</h1>
+	<h1 class="page-heading">Venia Theme (Concept)</h1>
 
 	<div class="actions-container">
-		<a class="gh-edit" href="https://github.com/magento-research/pwa-devdocs/tree/master/src/technologies/basic-concepts/index.md">
+		<a class="gh-edit" href="https://github.com/magento-research/pwa-devdocs/tree/master/src/venia-pwa-concept/index.md">
 			<i class="material-icons edit">mode_edit</i> Improve this page
 		</a>
 		<a class="gh-report" href="https://github.com/magento-research/pwa-devdocs/issues/new">
@@ -297,70 +297,10 @@
 		</a>
 	</div>
 </section>
-			<p>The tools provided by the Magento PWA project allows you to create websites that are fast, mobile-friendly, and reliable. 
-This topic lists the basic concepts you need to know to work with the Magento PWA Studio tools.</p>
+			<p>The Venia theme is a proof-of-concept Magento theme built using <a href="/pwa-devdocs/pwa-buildpack/">PWA Buildpack</a> tools and <a href="/pwa-devdocs/peregrine/">Peregrine</a> components.
+In its current, experimental state, the theme contains examples for Product Details and Category pages.</p>
 
-<h2 id="application-shell">Application shell</h2>
-
-<p>An application shell provides the basic user interface structure for a progressive web application.  <br />
-<sub>[ <em><a href="https://github.com/magento-research/pwa-devdocs/issues/8">Help write this topic</a></em> ]</sub></p>
-
-<h2 id="service-worker">Service worker</h2>
-
-<p>A service worker is a script that runs in the background.
-Progressive web applications use service workers for caching and resource retrieval.  <br />
-<sub>[ <em><a href="https://github.com/magento-research/pwa-devdocs/issues/14">Help write this topic</a></em> ]</sub></p>
-
-<h2 id="component-data-binding">Component data binding</h2>
-
-<p>Component data binding refers to the way data flows between the source and a UI component.
-Progressive web applications use data binding patterns to connect dynamic data with the user interface. <br />
-<sub>[ <em><a href="https://github.com/magento-research/pwa-devdocs/issues/9">Help write this topic</a></em> ]</sub></p>
-
-<h2 id="graphql">GraphQL</h2>
-
-<p>GraphQL is a specification for a data query language client side and a service layer on the server side.
-It is used to request and push data in a progressive web application. <br />
-<sub>[ <em><a href="https://github.com/magento-research/pwa-devdocs/issues/10">Help write this topic</a></em> ]</sub></p>
-
-<h2 id="css-modules">CSS modules</h2>
-
-<p>CSS modules are modular and reusable CSS styles.
-This allows you to develop components with styles that do not conflict with external style definitions. <br />
-<sub>[ <em><a href="https://github.com/magento-research/pwa-devdocs/issues/11">Help write this topic</a></em> ]</sub></p>
-
-<h2 id="client-state-reducers-and-actions">Client state, reducers, and actions</h2>
-
-<p>Client state, reducers, and actions are <a href="https://redux.js.org/introduction/core-concepts">Redux</a> concepts used to manage and handle the state of a web application.<br />
-<sub>[ <em><a href="https://github.com/magento-research/pwa-devdocs/issues/12">Help write this topic</a></em> ]</sub></p>
-
-<h2 id="loading-and-offline-states">Loading and offline states</h2>
-
-<p>Loading and offline are both states that must be handled by progressive web applications. <br />
-<sub>[ <em><a href="https://github.com/magento-research/pwa-devdocs/issues/13">Help write this topic</a></em> ]</sub></p>
-
-<h2 id="container-extensibility">Container extensibility</h2>
-
-<p>Writing extensible containers allow others to re-use and alter your container without modifying the source. <br />
-<sub>[ <em><a href="https://github.com/magento-research/pwa-devdocs/issues/15">Help write this topic</a></em> ]</sub></p>
-
-<h2 id="performance-patterns">Performance patterns</h2>
-
-<p>Performance is an important feature for a progressive web app.
-There are many strategies and patterns available to help boost the performance of a PWA. <br />
-<sub>[ <em><a href="https://github.com/magento-research/pwa-devdocs/issues/16">Help write this topic</a></em> ]</sub></p>
-
-<h2 id="root-components-and-routing">Root components and routing</h2>
-
-<p>The root component of an application is the DOM node under which all other nodes are managed by React.
-Routing is the ability to map a URL pattern to the appropriate handler. <br />
-<sub>[ <em><a href="https://github.com/magento-research/pwa-devdocs/issues/16">Help write this topic</a></em> ]</sub></p>
-
-<h2 id="critical-path">Critical path</h2>
-
-<p>The critical path for rendering refers to the steps the browser takes to process the HTML, CSS, and JavaScript files to display a website.
-Optimizing the critical path is important to get the best performance out of a progressive web application. <br />
-<sub>[ <em><a href="https://github.com/magento-research/pwa-devdocs/issues/18">Help write this topic</a></em> ]</sub></p>
+<p>Visit the <a href="https://github.com/magento-research/venia-pwa-concept"><code class="highlighter-rouge">venia-pwa-concept</code></a> repository to contribute to this project.</p>
 
 
 		</div>
