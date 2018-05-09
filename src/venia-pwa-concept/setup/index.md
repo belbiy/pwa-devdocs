@@ -3,6 +3,7 @@ title: Setup
 ---
 
 Follow the instructions on this page to setup the [Venia PWA concept theme] for Magento 2.
+At the end of this tutorial, you will have the Venia theme project installed in Magento 2 and a local development environment set up.
 
 ## Prerequisites
 
@@ -23,9 +24,9 @@ git clone git@github.com:magento-research/venia-pwa-concept.git
 
 ### Vagrant Box instructions
 
-If you are using a virtual machine, make sure it is able to access the new project directory. 
+If you are using a virtual machine, make sure it is able to access the new project directory and runs Magento 2.3. 
 
-For example, if you are using the [Vagrant Box for Magento 2 developers], use the following steps to add a synced folder to the virtual machine:
+For example, if you are using the [Vagrant Box for Magento 2 developers], use the following steps to add a synced folder to the virtual machine and configure it to use Magento 2.3:
 
 1. In the Vagrant box project directory, open the `Vagrantfile` and locate the following line:
    ``` 
@@ -34,6 +35,22 @@ For example, if you are using the [Vagrant Box for Magento 2 developers], use th
 1. Add an entry similar to the following entry above this line:
    ```
    config.vm.synced_folder '/Users/magedev/venia-pwa-concept', '/Users/magedev/venia-pwa-concept', type: "nfs", create: true
+   ```
+1. If your environment does not already use Magento 2.3, copy `etc/config.yaml.dist` as `etc/config.yml` and update the following line:
+   ``` yml
+   ce: "git@github.com:magento/magento2.git"
+   ```
+   to
+   ``` yml
+   ce: "git@github.com:magento/magento2.git::2.3-develop"
+   ```
+1. In that same file, update the PHP version to 7.1 by updating the following line:
+   ``` yml
+   php_version: "7.0"
+   ```
+   to
+   ``` yml
+   php_version: "7.1"
    ```
 1. Init or reset the Vagrant environment:
    ```
@@ -69,7 +86,7 @@ This configuration is set in the **Configuration** link in the **Content** tab.
 
 ## Set environment variables
 
-Under the Venia project's `theme-frontend-venia` directory, copy `.env.dist` into a new `env` file and update the variables with the correct host URL.
+Under the Venia project's `theme-frontend-venia` directory, copy `.env.dist` into a new `.env` file and update the variables with the correct host URL.
 
 ## Install theme dependencies
 
@@ -93,7 +110,9 @@ After the development server is up and running, look for a similar line in the t
 Project is running at https://magento-venia.local.pwadev:8000/
 ```
 
-Browse to this address to connect to your development server.
+This is the new address for your PWA frontend.
+You can still use the old address to access the Admin section of Magento, but 
+for PWA development on the frontend, use this new address.
 
 **Note:**
 *This project is still in early development, and currently only the `/home` route is supported.*
