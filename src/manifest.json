@@ -1,0 +1,12 @@
+---
+layout: null
+---
+{
+  "name": "Magento PWA Developer Documentation",
+  "short_name": "PWA DevDocs",
+  "lang": "en-US",
+  "start_url": "https://magento-research.github.io/pwa-devdocs/",
+  "display": "standalone",
+  "theme_color": "#F1F1F1"
+}
+ 
